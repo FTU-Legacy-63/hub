@@ -1,0 +1,985 @@
+{
+  "checkedAt": "2026-10-21",
+  "products": [
+    {
+      "id": "g01",
+      "group": "G01",
+      "category": "game",
+      "name": "Pitch & Ledger",
+      "tagline": "Đằng sau một lời chào đầu tư, con số nào thực sự đáng tin?",
+      "shortDesc": "Vào vai nhà đầu tư, đối chiếu hồ sơ doanh nghiệp và cân nhắc quyết định đầu tư với nguồn vốn hữu hạn.",
+      "demoUrl": null,
+      "status": "Có prototype trong repo",
+      "cover": "assets/products/g01.webp",
+      "coverCaption": "Hồ sơ dự án trên GitHub, không phải ảnh demo đang chạy.",
+      "readmePath": "README.md",
+      "tech": [
+        "HTML",
+        "JavaScript"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Nhà đầu tư mới cần luyện cách đọc và đối chiếu thông tin doanh nghiệp trước khi phân bổ vốn."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Sinh viên Kinh tế, Tài chính và Quản trị kinh doanh thực hành thẩm định một thương vụ."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Một tình huống học tập có hồ sơ doanh nghiệp và thông tin chưa đầy đủ, không dùng tiền thật."
+        }
+      ],
+      "features": [
+        {
+          "title": "Đọc và kiểm chứng hồ sơ",
+          "desc": "Đối chiếu lời giới thiệu với báo cáo tài chính, dòng tiền và thông tin trong hồ sơ tình huống.",
+          "media": "assets/products/g01.webp",
+          "mediaCaption": "Hồ sơ dự án trên GitHub, không phải ảnh demo đang chạy."
+        },
+        {
+          "title": "Ra quyết định đầu tư",
+          "desc": "Cân nhắc đầu tư hoặc từ chối theo luật chơi, đồng thời xác định lượng vốn muốn phân bổ trong tình huống.",
+          "media": "assets/products/g01-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G01: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Tương tác có kiểm soát",
+          "desc": "Nhánh hội thoại được định trước thay cho chatbot mở để giữ logic và dữ liệu tài chính nhất quán.",
+          "media": "assets/products/g01-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G01: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Luyện đọc chéo nhiều nguồn thay vì chỉ dựa vào một chỉ số đẹp.",
+          "Nhìn rõ đánh đổi giữa rủi ro, cơ hội và lượng vốn phân bổ."
+        ],
+        "org": [
+          "Cung cấp tình huống để thảo luận về thẩm định đầu tư trong lớp học.",
+          "Có thể kiểm tra lập luận qua hồ sơ và cơ chế trò chơi được công bố."
+        ]
+      },
+      "rationale": "Người mới có thể bị thuyết phục bởi một bài pitch hấp dẫn nhưng chưa biết kiểm chứng thông tin. Nhóm chọn trò chơi thẩm định có hồ sơ và các lựa chọn hữu hạn để luyện quyết định trước khi đối mặt với tiền thật.",
+      "journey": [
+        "Xác định khó khăn khi kiểm chứng thông tin đầu tư.",
+        "So sánh các hướng sản phẩm và chọn tình huống thẩm định.",
+        "Thu hẹp còn một tập hồ sơ và các nhánh quyết định định trước.",
+        "Thiết kế giao diện, luật chơi và logic đánh giá trong repo.",
+        "Chưa tìm thấy link demo công khai được nhóm công bố."
+      ],
+      "lead": null,
+      "members": [
+        {
+          "name": "Nguyễn Thị Kiều Anh",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Phùng Khánh Linh",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Nguyễn Minh Trang",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Hoàng Minh Nhật",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Lê Đắc Phú Minh",
+          "role": "Thành viên"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "GAME RULEBOOK.md",
+        "Week 5/WORKING INTERFACE DRAFT & REVISION EVIDENCE.md"
+      ]
+    },
+    {
+      "id": "g02",
+      "group": "G02",
+      "category": "game",
+      "name": "MEDIFIN",
+      "tagline": "Chẩn đoán vấn đề tài chính, không chỉ chọn một đáp án.",
+      "shortDesc": "Trở thành tư vấn viên tài chính, điều tra bằng chứng, đề xuất giải pháp và đánh giá lại quyết định trong case Toy Kingdom.",
+      "demoUrl": "https://kirisakitrangngocbk-a11y.github.io/Medifin/",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g02.webp",
+      "coverCaption": "Ảnh chụp bản trải nghiệm MEDIFIN.",
+      "readmePath": "README.md",
+      "tech": [
+        "HTML",
+        "JavaScript"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Sinh viên Tài chính - Ngân hàng muốn thực hành tư vấn qua một tình huống doanh nghiệp."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học cần phân biệt chất lượng quyết định với kết quả cuối cùng của doanh nghiệp."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Case Toy Kingdom có bằng chứng tài chính và các quyết định liên tiếp, không phải tư vấn cho một khách hàng thật."
+        }
+      ],
+      "features": [
+        {
+          "title": "Điều tra và chẩn đoán",
+          "desc": "Đọc bằng chứng để xác định vấn đề tài chính chính thay vì chỉ chọn một triệu chứng dễ thấy.",
+          "media": "assets/products/g02.webp",
+          "mediaCaption": "Ảnh chụp bản trải nghiệm MEDIFIN."
+        },
+        {
+          "title": "Giải pháp và hệ quả",
+          "desc": "Chọn giải pháp, thời điểm và ưu tiên các bên liên quan, sau đó quan sát tác động trong tình huống.",
+          "media": "assets/products/g02-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G02: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Counselor Case Report",
+          "desc": "Báo cáo tách chất lượng quá trình tư vấn khỏi kết quả mô phỏng của doanh nghiệp.",
+          "media": "assets/products/g02-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G02: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Luyện một luồng tư vấn từ điều tra đến đánh giá lại.",
+          "Hiểu vì sao quyết định hợp lý vẫn có thể cho kết quả doanh nghiệp khó khăn."
+        ],
+        "org": [
+          "Tình huống chung để thảo luận về cách suy luận tài chính.",
+          "Công bố logic đánh giá và phạm vi một case hoàn chỉnh."
+        ]
+      },
+      "rationale": "Những dấu hiệu như thiếu thanh khoản, đòn bẩy và áp lực tái cấp vốn có thể cùng xuất hiện. MEDIFIN tạo một tình huống để người học phải tìm vấn đề chính và theo dõi hệ quả của chính lựa chọn đó.",
+      "journey": [
+        "Xác định nhu cầu thực hành chẩn đoán tài chính.",
+        "Xây dựng hồ sơ và bằng chứng cho case Toy Kingdom.",
+        "Chốt mô phỏng tư vấn theo tình huống, một case làm MVP.",
+        "Tích hợp luồng 13 màn hình, 6 giai đoạn và tiếp tục kiểm thử.",
+        "Công bố bản trải nghiệm; README vẫn ghi nhận hạng mục cần tinh chỉnh."
+      ],
+      "lead": {
+        "name": "Nguyễn Phương Khuê",
+        "role": "Project Coordinator & Scenario Designer"
+      },
+      "members": [
+        {
+          "name": "Nguyễn Phương Khuê",
+          "role": "Điều phối và kịch bản"
+        },
+        {
+          "name": "Trương Vĩnh Thịnh",
+          "role": "Frontend và tích hợp"
+        },
+        {
+          "name": "Lâm Diệu Anh",
+          "role": "Nội dung tài chính"
+        },
+        {
+          "name": "Bùi Lê Trà Giang",
+          "role": "UI/UX và hội thoại"
+        },
+        {
+          "name": "Lê Bảo Ngọc",
+          "role": "Game engine và logic"
+        }
+      ],
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "g03",
+      "group": "G03",
+      "category": "game",
+      "name": "WHO RUNS THE WORLD?",
+      "tagline": "Một quyết định OMO, nhiều đánh đổi của nền kinh tế.",
+      "shortDesc": "Đóng vai ban điều hành nghiệp vụ thị trường mở, theo dõi thanh khoản và lựa chọn chính sách qua các giai đoạn mô phỏng.",
+      "demoUrl": "https://who-runs-the-world-xajm.onrender.com/",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g03.webp",
+      "coverCaption": "Ảnh chụp bản trải nghiệm WHO RUNS THE WORLD?.",
+      "readmePath": "README.md",
+      "tech": [
+        "Python",
+        "HTML"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Sinh viên quan tâm Ngân hàng Nhà nước và chính sách tiền tệ nhưng chưa có kiến thức chuyên sâu."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học quản trị ngân hàng muốn quan sát quan hệ giữa thanh khoản, lãi suất và chỉ tiêu vĩ mô."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Người chơi ra quyết định trong một nền kinh tế mô phỏng, mỗi phase tương ứng 30 ngày."
+        }
+      ],
+      "features": [
+        {
+          "title": "Đọc bối cảnh và chỉ báo",
+          "desc": "Scenario/News Panel và các chỉ tiêu giúp người chơi nắm thanh khoản, lãi suất và bối cảnh kinh tế.",
+          "media": "assets/products/g03.webp",
+          "mediaCaption": "Ảnh chụp bản trải nghiệm WHO RUNS THE WORLD?."
+        },
+        {
+          "title": "Điều hành OMO",
+          "desc": "Chọn công cụ, phương thức đấu thầu, hành động, khối lượng và lãi suất; xem phản ứng của các ngân hàng mô phỏng.",
+          "media": "assets/products/g03-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G03: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Học qua kết quả",
+          "desc": "Kết quả được chuyển tiếp sang phase sau; Guide và Learning Cards giải thích các khái niệm liên quan.",
+          "media": "assets/products/g03-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G03: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Trực quan hóa chuỗi OMO, thanh khoản, lãi suất và chỉ tiêu vĩ mô.",
+          "Thử quyết định rồi điều chỉnh trong một môi trường không dùng tiền thật."
+        ],
+        "org": [
+          "Cung cấp bối cảnh thảo luận chính sách tiền tệ trong lớp.",
+          "Luồng trò chơi gắn lựa chọn với các chỉ tiêu quan sát được."
+        ]
+      },
+      "rationale": "Học lý thuyết chưa tạo cơ hội thử một quyết định chính sách và quan sát hệ quả. Trò chơi đưa người học vào vai ban điều hành, với dữ liệu bối cảnh và một chuỗi tác động được mô phỏng.",
+      "journey": [
+        "Nhận diện khó khăn khi liên hệ các chỉ số tiền tệ.",
+        "Xây dựng bối cảnh, chỉ tiêu và nghiệp vụ thị trường mở.",
+        "Chọn vai ban điều hành OMO và luồng quyết định theo phase.",
+        "Tích hợp auction engine, economic engine và thẻ học tập.",
+        "Công bố bản trải nghiệm trên Render."
+      ],
+      "lead": null,
+      "members": [
+        {
+          "name": "Vũ Lưu Minh Ngọc",
+          "role": "Backend"
+        },
+        {
+          "name": "Nguyễn Bảo Hiền",
+          "role": "Game logic và kịch bản"
+        },
+        {
+          "name": "Nguyễn Minh Trang",
+          "role": "UI/UX"
+        },
+        {
+          "name": "Nguyễn Khánh Linh",
+          "role": "Mô hình kinh tế"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "app/Week 6.md"
+      ]
+    },
+    {
+      "id": "g04",
+      "group": "G04",
+      "category": "invest",
+      "name": "FinFlow",
+      "tagline": "Mua hay thuê nhà, bắt đầu từ sức chịu đựng tài chính.",
+      "shortDesc": "So sánh một phương án mua với một phương án thuê, xét an toàn tài chính trước/sau ân hạn và tài sản ròng dài hạn.",
+      "demoUrl": null,
+      "status": "Có prototype trong repo",
+      "cover": "assets/products/g04.webp",
+      "coverCaption": "Hồ sơ và prototype trong repo, chưa xác minh demo công khai.",
+      "readmePath": "Week 1/README.md",
+      "tech": [
+        "HTML",
+        "JavaScript"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Hộ gia đình trẻ và người mua nhà lần đầu cần so sánh mua với tiếp tục thuê."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người muốn kiểm tra sức ép dòng tiền của một khoản vay và các giả định dài hạn."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "So sánh một cặp căn mua/thuê cụ thể theo thu nhập, điều kiện vay và giả định do công cụ công bố."
+        }
+      ],
+      "features": [
+        {
+          "title": "Chọn cặp mua và thuê",
+          "desc": "Chọn một căn mua và một căn thuê cụ thể để tránh so sánh các phương án không tương đương.",
+          "media": "assets/products/g04.webp",
+          "mediaCaption": "Hồ sơ và prototype trong repo, chưa xác minh demo công khai."
+        },
+        {
+          "title": "An toàn qua hai giai đoạn",
+          "desc": "Xem chi phí so với thu nhập trong thời gian ân hạn và sau ân hạn, không chỉ nhìn khoản trả ban đầu.",
+          "media": "assets/products/g04-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G04: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Giải thích kết quả",
+          "desc": "Kết quả BUY, RENT hoặc NEITHER đi kèm lý do; biểu đồ tài sản ròng là minh họa theo giả định, không phải dự báo.",
+          "media": "assets/products/g04-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G04: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Nhìn rõ áp lực dòng tiền sau ân hạn.",
+          "So sánh cả an toàn gần hạn và tài sản ròng dài hạn."
+        ],
+        "org": [
+          "Một cấu trúc giải thích để thảo luận bài toán tài chính nhà ở.",
+          "Công bố giả định và giới hạn để người đọc kiểm tra kết quả."
+        ]
+      },
+      "rationale": "Quyết định mua hay thuê không thể chỉ dựa vào tiền trả hàng tháng. FinFlow kết nối thu nhập, chi phí vay và giả định tài sản để người dùng nhìn được cả khả năng chi trả lẫn hệ quả dài hạn.",
+      "journey": [
+        "Xác định khó khăn của người mua nhà lần đầu.",
+        "Lập danh mục thu nhập, giá nhà, tiền thuê và điều kiện vay.",
+        "Chốt so sánh một cặp mua/thuê cụ thể.",
+        "Công bố prototype HTML và logic kiểm tra an toàn hai giai đoạn.",
+        "Chưa tìm thấy link demo công khai trong repo nhóm."
+      ],
+      "lead": null,
+      "members": [
+        {
+          "name": "Phạm Nam Phương",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Dương Phương Anh",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Phạm Thị Khánh An",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Nguyễn Hải Sơn",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Nguyễn Minh Tuấn",
+          "role": "Thành viên"
+        }
+      ],
+      "sources": [
+        "Week 1/README.md",
+        "Week 5/feature-scope.md",
+        "Week 5/MVP Finflow.html"
+      ]
+    },
+    {
+      "id": "g05",
+      "group": "G05",
+      "category": "game",
+      "name": "ARBIVERSE",
+      "tagline": "Khi thị trường thay đổi, cơ hội arbitrage thay đổi thế nào?",
+      "shortDesc": "Khám phá chênh lệch giá qua ba giai đoạn phát triển thị trường, với đánh đổi về thông tin, thanh khoản và chi phí.",
+      "demoUrl": "https://ftu-legacy-63.github.io/G05/",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g05.webp",
+      "coverCaption": "Ảnh chụp bản trải nghiệm ARBIVERSE.",
+      "readmePath": "README.md",
+      "tech": [
+        "HTML",
+        "JavaScript"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Sinh viên năm 2, 3 chuyên ngành Kinh tế và Tài chính muốn hiểu arbitrage qua thực hành."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học về tỷ giá, carry trade và sự phát triển của hạ tầng giao dịch."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Trò chơi mô phỏng ba giai đoạn thị trường; cơ hội và đánh đổi thay đổi theo từng giai đoạn."
+        }
+      ],
+      "features": [
+        {
+          "title": "Ba giai đoạn thị trường",
+          "desc": "Đi từ giao dịch giữa người với người đến arbitrage liên thị trường và chiến lược carry trade.",
+          "media": "assets/products/g05.webp",
+          "mediaCaption": "Ảnh chụp bản trải nghiệm ARBIVERSE."
+        },
+        {
+          "title": "Thông tin và cơ hội",
+          "desc": "Lựa chọn vai trò, đọc nguồn tin và nhận diện cơ hội trong điều kiện thông tin khác nhau.",
+          "media": "assets/products/g05-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G05: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Đánh đổi trong giao dịch",
+          "desc": "Quản lý thanh khoản, chi phí và đòn bẩy thay vì coi arbitrage đơn giản là mua rẻ, bán đắt.",
+          "media": "assets/products/g05-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G05: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Liên hệ khoảng trống thông tin với cơ hội chênh lệch giá.",
+          "Nhìn rõ chi phí và điều kiện thị trường có thể làm thay đổi giao dịch."
+        ],
+        "org": [
+          "Bổ sung tình huống tương tác cho bài học về hiệu quả thị trường.",
+          "Cung cấp ba bối cảnh để so sánh cơ chế arbitrage."
+        ]
+      },
+      "rationale": "Khái niệm arbitrage dễ bị rút gọn thành mua rẻ, bán đắt. ARBIVERSE đưa thêm thông tin, chi phí và tính liên kết của thị trường vào cùng một trải nghiệm để người học hiểu các điều kiện đằng sau cơ hội.",
+      "journey": [
+        "Xác định khoảng cách giữa khái niệm arbitrage và thực tế giao dịch.",
+        "Nghiên cứu thông tin, tỷ giá, thanh khoản và chi phí.",
+        "Chọn hành trình ba giai đoạn phát triển thị trường.",
+        "Xây dựng logic, kịch bản và giao diện trong repo.",
+        "Công bố bản trải nghiệm qua GitHub Pages."
+      ],
+      "lead": {
+        "name": "Hoàng Tường Anh",
+        "role": "Coordinator & Game Mechanics Designer"
+      },
+      "members": [
+        {
+          "name": "Hoàng Tường Anh",
+          "role": "Điều phối và game mechanics"
+        },
+        {
+          "name": "Nguyễn Minh Tâm",
+          "role": "Dữ liệu và chỉ tiêu tài chính"
+        },
+        {
+          "name": "Trần Thu Anh",
+          "role": "Nội dung và logic test"
+        },
+        {
+          "name": "Lê Quỳnh Chi",
+          "role": "Backend"
+        },
+        {
+          "name": "Hoàng Hà Uyên",
+          "role": "Frontend"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "Week 5/Feature scope.md"
+      ]
+    },
+    {
+      "id": "g06",
+      "group": "G06",
+      "category": "game",
+      "name": "Free Fall 2.0",
+      "tagline": "Đòn bẩy làm tăng sức mua. Điều gì xảy ra khi thị trường đảo chiều?",
+      "shortDesc": "Quản lý vị thế, tiền mặt và margin qua sáu giai đoạn thị trường, từ hưng phấn tới nguy cơ thanh lý bắt buộc.",
+      "demoUrl": "https://phan-dung.ngqminh6979.workers.dev/",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g06.webp",
+      "coverCaption": "Ảnh chụp bản trải nghiệm Free Fall 2.0.",
+      "readmePath": "README.md",
+      "tech": [
+        "Python",
+        "HTML"
+      ],
+      "version": "2.0",
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Nhà đầu tư cá nhân ít kinh nghiệm thực tế với giao dịch đòn bẩy."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Sinh viên tài chính hiểu công thức margin nhưng chưa trải nghiệm hệ quả khi thị trường xấu đi."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Mô phỏng sáu phase, mua/bán/giữ và quản lý thanh khoản; không phải nền tảng giao dịch thật."
+        }
+      ],
+      "features": [
+        {
+          "title": "Danh mục qua sáu phase",
+          "desc": "Ra quyết định mua, bán, giữ và quy mô vị thế trong các giai đoạn tăng trưởng, điều chỉnh và khủng hoảng.",
+          "media": "assets/products/g06.webp",
+          "mediaCaption": "Ảnh chụp bản trải nghiệm Free Fall 2.0."
+        },
+        {
+          "title": "Sức mua và margin health",
+          "desc": "Theo dõi nợ margin, đòn bẩy, sức mua và khả năng duy trì vị thế khi giá giảm.",
+          "media": "assets/products/g06-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G06: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Margin call và thanh lý",
+          "desc": "Quan sát quá trình từ cảnh báo đến margin call và thanh lý bắt buộc, cùng các chỉ tiêu kết quả cuối kỳ.",
+          "media": "assets/products/g06-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G06: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Nhìn thấy đòn bẩy có thể chuyển từ cơ hội thành điểm yếu tài chính.",
+          "Thực hành cân nhắc tiền mặt và mức phơi nhiễm trong tình huống áp lực."
+        ],
+        "org": [
+          "Một môi trường học tập không dùng vốn thật.",
+          "Kịch bản theo phase giúp thảo luận FOMO, thanh khoản và quản trị rủi ro."
+        ]
+      },
+      "rationale": "Sức mua tăng nhờ margin có thể nhìn thấy ngay, nhưng mức dễ tổn thương khi thị trường giảm lại khó cảm nhận trước. Free Fall 2.0 biến hệ quả đó thành một chuỗi lựa chọn có phản hồi.",
+      "journey": [
+        "Xác định khó khăn khi cảm nhận hậu quả của đòn bẩy.",
+        "Xây dựng kịch bản thị trường và chỉ tiêu margin.",
+        "Chốt luồng quản lý vị thế và tiền mặt qua sáu phase.",
+        "Tích hợp simulation engine và công bố test case.",
+        "Công bố link game trong tài liệu Week 6."
+      ],
+      "lead": null,
+      "members": [
+        {
+          "name": "Hữu Dụ",
+          "role": "Có hồ sơ đóng góp trong repo"
+        },
+        {
+          "name": "Quang Minh",
+          "role": "Có hồ sơ đóng góp trong repo"
+        },
+        {
+          "name": "Quang Khánh",
+          "role": "Có hồ sơ đóng góp trong repo"
+        },
+        {
+          "name": "Hồng Nguyên",
+          "role": "Có hồ sơ đóng góp trong repo"
+        },
+        {
+          "name": "Đức Lương",
+          "role": "Có hồ sơ đóng góp trong repo"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "Week 6/Game_link.md",
+        "Contributions"
+      ]
+    },
+    {
+      "id": "g07",
+      "group": "G07",
+      "category": "edu",
+      "name": "CFA Quest",
+      "tagline": "Luyện Ethics từ chính những phần bạn đang yếu.",
+      "shortDesc": "Hành trình năm Arena dùng dữ liệu trả lời để xác định cụm nội dung yếu và tạo lượt luyện tập tiếp theo.",
+      "demoUrl": "https://ftu-legacy-63.github.io/G07/src/cfa_quest_v11.html",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g07.webp",
+      "coverCaption": "Ảnh chụp bản trải nghiệm CFA Quest.",
+      "readmePath": "README.md",
+      "tech": [
+        "HTML",
+        "JavaScript"
+      ],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Thí sinh CFA Level I đã học lý thuyết Ethics và đang luyện câu hỏi trắc nghiệm."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học muốn biết phần sai đang tập trung ở đâu thay vì chỉ biết tổng số câu sai."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Lượt luyện năm Arena dựa trên ngân hàng câu hỏi do nhóm biên soạn; không phải bài thi chính thức của CFA Institute."
+        }
+      ],
+      "features": [
+        {
+          "title": "Chẩn đoán theo cụm",
+          "desc": "Từ lượt luyện ban đầu, xác định các cụm có tỷ lệ đúng thấp để lựa chọn câu hỏi tiếp theo.",
+          "media": "assets/products/g07.webp",
+          "mediaCaption": "Ảnh chụp bản trải nghiệm CFA Quest."
+        },
+        {
+          "title": "Năm Arena và World Quest",
+          "desc": "Độ khó, thời gian và ngưỡng qua vòng thay đổi theo hành trình; World Quest hỗ trợ luyện và tích lũy Credit.",
+          "media": "assets/products/g07-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G07: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Bảng tổng kết",
+          "desc": "Nhìn lại kết quả theo cụm/module trong một lượt chơi. Chỉ số nội bộ không dự báo điểm thi CFA thật.",
+          "media": "assets/products/g07-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G07: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Tập trung luyện phần còn yếu thay vì tiếp tục làm dàn trải.",
+          "Nhìn thấy kết quả theo từng cụm sau hành trình."
+        ],
+        "org": [
+          "Một cách tổ chức luyện tập Ethics có thể đối chiếu logic công khai.",
+          "Ngân hàng câu hỏi và test suite được nhóm lập danh mục trong repo."
+        ]
+      },
+      "rationale": "Biết mình sai bao nhiêu câu chưa đủ để quyết định nên luyện gì tiếp. CFA Quest dùng dữ liệu sai trong lượt chơi để điều chỉnh nội dung luyện, với giới hạn đo lường được công bố rõ.",
+      "journey": [
+        "Xác định khó khăn khi tự chẩn đoán lỗi Ethics.",
+        "Biên soạn câu hỏi và phân loại cụm nội dung.",
+        "Chọn hành trình luyện dựa trên dữ liệu trả lời.",
+        "Bổ sung tiến trình, timer và kiểm thử logic trong Week 7.",
+        "Duy trì link v11; README lưu ý cần đồng bộ logic Week 7 với build."
+      ],
+      "lead": {
+        "name": "Quỳnh",
+        "role": "Trưởng nhóm, theo tên công bố trong README"
+      },
+      "members": [
+        {
+          "name": "Quỳnh",
+          "role": "Trưởng nhóm"
+        },
+        {
+          "name": "Hồng",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Trang",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Minh",
+          "role": "Thành viên"
+        },
+        {
+          "name": "Khôi",
+          "role": "Thành viên"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "W6/deployment.md",
+        "W6/limitations.md"
+      ]
+    },
+    {
+      "id": "g08",
+      "group": "G08",
+      "category": "game",
+      "name": "The Last Heir",
+      "tagline": "Kết nối bằng chứng trước khi đưa ra kết luận.",
+      "shortDesc": "Tình huống điều tra tài chính giúp người học nối dữ liệu, giao dịch và bằng chứng kiểm soát thành lập luận có căn cứ.",
+      "demoUrl": null,
+      "status": "Hồ sơ bản tích hợp",
+      "cover": "assets/products/g08.webp",
+      "coverCaption": "Hồ sơ dự án được nhóm công bố trên GitHub.",
+      "readmePath": "README.md",
+      "tech": [],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Sinh viên Tài chính, Kế toán, Ngân hàng và Kinh doanh có nền tảng tài chính và kiểm soát nội bộ."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học cần luyện phân biệt dấu hiệu, dữ kiện và bằng chứng đủ mạnh cho một nhận định."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Tình huống doanh nghiệp nhiều nguồn thông tin, đi từ dấu hiệu tài chính đến đánh giá kiểm soát và trách nhiệm."
+        }
+      ],
+      "features": [
+        {
+          "title": "Tổng hợp thông tin",
+          "desc": "Kết nối báo cáo tài chính, dữ liệu giao dịch, hồ sơ phê duyệt và vai trò của các cá nhân.",
+          "media": "assets/products/g08.webp",
+          "mediaCaption": "Hồ sơ dự án được nhóm công bố trên GitHub."
+        },
+        {
+          "title": "Đối chiếu bằng chứng",
+          "desc": "Phân biệt raw fact, control interpretation và final assessment trong chuỗi điều tra.",
+          "media": "assets/products/g08-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G08: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Biên bản NST-01 và hành động quản trị",
+          "desc": "Hồ sơ Week 6 mô tả năm chương điều tra, biên bản NST-01 và ba quyết định quản trị ở cuối hành trình. Chưa có link phân phối công khai được xác nhận.",
+          "media": "assets/products/g08-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G08: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Luyện giải thích vì sao đưa ra một kết luận.",
+          "Tránh coi một chỉ số bất thường hoặc trạng thái phê duyệt là bằng chứng đầy đủ."
+        ],
+        "org": [
+          "Hồ sơ minh họa một hướng học tập dựa trên tích hợp bằng chứng.",
+          "Phạm vi và câu hỏi học tập được công bố để tiếp tục thảo luận."
+        ]
+      },
+      "rationale": "Các thông tin riêng lẻ chưa tự tạo thành một kết luận về doanh nghiệp. The Last Heir tập trung vào kỹ năng liên kết nhiều nguồn để người học xây dựng và giới hạn lập luận của mình.",
+      "journey": [
+        "So sánh các khó khăn về tích hợp, kiểm chứng và lập luận bằng chứng.",
+        "Chọn Information Integration làm hướng vấn đề chính.",
+        "Thu hẹp về một chuỗi điều tra và hai quyết định cuối.",
+        "Tài liệu Week 6 ghi nhận kiểm tra logic và dữ liệu; chưa xác nhận toàn bộ giao diện trên trình duyệt.",
+        "Chưa tìm thấy link demo công khai trong snapshot repo đã kiểm tra."
+      ],
+      "lead": {
+        "name": "Phạm Quỳnh Phương",
+        "role": "Điều phối nhóm"
+      },
+      "members": [
+        {
+          "name": "Phạm Quỳnh Phương",
+          "role": "Điều phối"
+        },
+        {
+          "name": "Phạm Triệu Tiến Dũng",
+          "role": "Nội dung và dữ liệu"
+        },
+        {
+          "name": "Nguyễn Minh Hiền",
+          "role": "Nhiệm vụ và logic"
+        },
+        {
+          "name": "Tôn Khánh Ngọc",
+          "role": "Bối cảnh và bằng chứng"
+        },
+        {
+          "name": "Đinh Thị Minh Khuê",
+          "role": "Giao diện và tích hợp"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "WEEK_6/README.md"
+      ]
+    },
+    {
+      "id": "g09",
+      "group": "G09",
+      "category": "analytics",
+      "name": "Finfolio 2.0",
+      "tagline": "Hiểu lợi nhuận và rủi ro trước khi điều chỉnh danh mục.",
+      "shortDesc": "Phân tích đóng góp theo tài sản và nhóm, đối chiếu benchmark và xem một phương án tỷ trọng tham khảo trên cùng dữ liệu.",
+      "demoUrl": "https://g09-finfolio.vercel.app/",
+      "status": "Có bản trải nghiệm",
+      "cover": "assets/products/g09.webp",
+      "coverCaption": "Ảnh chụp Finfolio, công cụ phân tích danh mục giả định.",
+      "readmePath": "README.md",
+      "tech": [
+        "JavaScript",
+        "Python",
+        "tvdatafeed",
+        "yfinance"
+      ],
+      "version": "2.0",
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Nhà đầu tư cá nhân đã có kiến thức tài chính, muốn nhìn rõ đóng góp của các tài sản trong danh mục."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người cần so sánh danh mục với benchmark và cân nhắc một thay đổi tỷ trọng."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Danh mục giả định từ giá trị đầu kỳ; dữ liệu lịch sử, phương pháp và giới hạn được công bố. Không phải hệ thống đặt lệnh."
+        }
+      ],
+      "features": [
+        {
+          "title": "Phân rã lợi nhuận và rủi ro",
+          "desc": "Xem đóng góp theo mã, asset class, currency hoặc ngành khi dữ liệu phân loại khả dụng.",
+          "media": "assets/products/g09.webp",
+          "mediaCaption": "Ảnh chụp Finfolio, công cụ phân tích danh mục giả định."
+        },
+        {
+          "title": "Benchmark và biểu đồ PnL",
+          "desc": "So sánh trên cùng vốn và khoảng thời gian; đọc giá trị danh mục theo ngày trên biểu đồ.",
+          "media": "assets/products/g09-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G09: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Phương án tham khảo",
+          "desc": "Xem tỷ trọng minimum variance có ràng buộc và các đánh đổi. Kết quả không phải lời khuyên đầu tư.",
+          "media": "assets/products/g09-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G09: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Nhìn rõ danh mục đang phụ thuộc vào tài sản hoặc nhóm nào.",
+          "So sánh các phương án trên cùng dữ liệu trước khi tự ra quyết định."
+        ],
+        "org": [
+          "Minh họa cách nối nguồn dữ liệu, logic và kết quả phân tích.",
+          "Mã nguồn và hồ sơ kiểm thử giúp đối chiếu các giả định."
+        ]
+      },
+      "rationale": "Tỷ suất của từng mã chưa giải thích đủ danh mục nhiều loại tài sản. Finfolio nối dữ liệu lịch sử, attribution và benchmark để nhà đầu tư thấy nguồn lợi nhuận, rủi ro và giới hạn của một phương án thay đổi.",
+      "journey": [
+        "Chốt nhu cầu phân tích của nhà đầu tư cá nhân.",
+        "Lập danh mục input, nguồn giá và các giả định tài chính.",
+        "Chọn luồng danh mục giả định, attribution và so sánh benchmark.",
+        "Tích hợp nguồn VN/quốc tế, kiểm thử phép tính và giao diện.",
+        "Công bố bản Finfolio trên Vercel và giữ hồ sơ trong repo."
+      ],
+      "lead": null,
+      "members": [
+        {
+          "name": "Hoàng Khánh Linh",
+          "role": "Product Owner"
+        },
+        {
+          "name": "Nguyễn Quỳnh Anh",
+          "role": "Product Manager"
+        },
+        {
+          "name": "Lê Bảo An",
+          "role": "Lead Developer"
+        },
+        {
+          "name": "Trần Minh Ngọc",
+          "role": "Business Analyst"
+        },
+        {
+          "name": "Nguyễn Ngọc Anh",
+          "role": "UI/UX Designer"
+        }
+      ],
+      "sources": [
+        "README.md",
+        "docs/WEEK6.md"
+      ]
+    },
+    {
+      "id": "g10",
+      "group": "G10",
+      "category": "career",
+      "name": "The Credit Desk",
+      "tagline": "Một hồ sơ vay, một quyết định phải giải thích được.",
+      "shortDesc": "Thực hành vai trò cán bộ tín dụng: đọc hồ sơ, đánh giá khả năng trả nợ và đưa ra quyết định trong giới hạn room tín dụng.",
+      "demoUrl": null,
+      "status": "Hồ sơ và logic MVP",
+      "cover": "assets/products/g10.webp",
+      "coverCaption": "Hồ sơ dự án trên GitHub; chưa có link demo được xác minh.",
+      "readmePath": "Readme.md",
+      "tech": [],
+      "version": null,
+      "users": [
+        {
+          "title": "Người dùng chính",
+          "desc": "Sinh viên năm 3, 4 Tài chính - Ngân hàng chuẩn bị cho công việc tín dụng hoặc rủi ro."
+        },
+        {
+          "title": "Người dùng liên quan",
+          "desc": "Người học muốn luyện giải thích quyết định cho vay trong một bối cảnh có ràng buộc."
+        },
+        {
+          "title": "Bối cảnh sử dụng",
+          "desc": "Hồ sơ vay giả định và room hữu hạn; tài liệu Week 6 thu hẹp MVP về Capacity, không phải thẩm định tín dụng thực tế đầy đủ."
+        }
+      ],
+      "features": [
+        {
+          "title": "Đọc hồ sơ và thông tin thu nhập",
+          "desc": "Xác định thông tin liên quan đến khả năng trả nợ trong các hồ sơ tình huống.",
+          "media": "assets/products/g10.webp",
+          "mediaCaption": "Hồ sơ dự án trên GitHub; chưa có link demo được xác minh."
+        },
+        {
+          "title": "Cân nhắc quyết định",
+          "desc": "Đưa ra quyết định cho vay/không cho vay, hạn mức và điều kiện theo luật của mô phỏng.",
+          "media": "assets/products/g10-f2.webp",
+          "mediaCaption": "Trích tài liệu công khai của G10: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        },
+        {
+          "title": "Kết quả và giải thích",
+          "desc": "Thiết kế đầu ra gắn kết quả với lý do, ý nghĩa, hành động tiếp theo và giới hạn. Phạm vi MVP mới tập trung Capacity.",
+          "media": "assets/products/g10-f3.webp",
+          "mediaCaption": "Trích tài liệu công khai của G10: phạm vi và cách giải thích; không phải ảnh chức năng đang chạy."
+        }
+      ],
+      "benefits": {
+        "user": [
+          "Thực hành cân nhắc và bảo vệ một quyết định tín dụng.",
+          "Nhìn rõ ràng buộc room và các tiêu chí trong tình huống."
+        ],
+        "org": [
+          "Một bộ tình huống cho đào tạo và thảo luận kỹ năng tín dụng.",
+          "Rulebook, hồ sơ và ví dụ tính toán được công bố để kiểm tra."
+        ]
+      },
+      "rationale": "Kiến thức thẩm định chưa thay thế được kinh nghiệm đưa ra một quyết định cho vay. The Credit Desk chọn môi trường mô phỏng với hồ sơ và giới hạn rõ để người học luyện đánh giá mà không gây tổn thất vốn thật.",
+      "journey": [
+        "Xác định khoảng cách giữa lý thuyết và quyết định tín dụng.",
+        "Thiết kế hồ sơ, tiêu chí và giới hạn tín dụng.",
+        "Chọn luồng mô phỏng cán bộ tín dụng.",
+        "Điều chỉnh hồ sơ Week 6, thu hẹp MVP về Capacity.",
+        "Chưa tìm thấy link demo công khai trong repo nhóm."
+      ],
+      "lead": {
+        "name": "Doan Diep Anh",
+        "role": "Product Lead, tên theo README"
+      },
+      "members": [
+        {
+          "name": "Doan Diep Anh",
+          "role": "Product Lead"
+        },
+        {
+          "name": "Lai Ngoc Linh",
+          "role": "Credit Lead"
+        },
+        {
+          "name": "Nguyen Ngoc Minh Ha",
+          "role": "Scenario & Data Lead"
+        },
+        {
+          "name": "Nguyen Duc Minh",
+          "role": "Technical Lead"
+        },
+        {
+          "name": "Dang Thi Van Trang",
+          "role": "Design Lead"
+        }
+      ],
+      "sources": [
+        "Readme.md",
+        "Week 6/OFFICIAL MVP (1C - CAPACITY).md"
+      ]
+    }
+  ]
+}

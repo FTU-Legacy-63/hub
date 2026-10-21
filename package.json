@@ -1,0 +1,13 @@
+{
+  "name": "ftu-legacy-k63-hub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "python3 -m http.server 8180 --bind 127.0.0.1 --directory dist",
+    "research": "node scripts/collect-repos.mjs"
+  },
+  "dependencies": {"@fontsource/ibm-plex-mono": "5.3.0"}
+}
