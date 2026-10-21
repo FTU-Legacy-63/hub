@@ -21,3 +21,5 @@
 @media(prefers-reduced-transparency:reduce){.glass{background:#15316a}.detail-menu{background:#061235;backdrop-filter:none;-webkit-backdrop-filter:none}}
 .feature-title{display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:16px;font-weight:600}.feature-description{display:block;color:#dbe9ff;font-size:12px;margin-top:14px}.feature-description[hidden]{display:none}
 #app[aria-busy=true]>.loading{min-height:100svh}
+/* Natural detail-title wrapping avoids expensive rebalancing during Vietnamese font swaps. */
+.detail-hero h1,.detail-section h2,.detail-section h3,.detail-section h4{text-wrap:wrap}
