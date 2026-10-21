@@ -15,15 +15,21 @@
   <link rel="canonical" href="{{URL}}">
   <link rel="icon" href="{{BASE}}assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="{{BASE}}assets/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{BASE}}assets/fonts/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{BASE}}assets/fonts/ibm-plex-mono-vietnamese-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{BASE}}assets/fonts/ibm-plex-mono-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{BASE}}assets/fonts/fonts.css">
   <link rel="stylesheet" href="{{BASE}}styles.css">
+  <link rel="modulepreload" href="{{BASE}}catalog.mjs">
+  <link rel="preload" href="{{BASE}}products.json" as="fetch" crossorigin>
+  <link rel="preload" href="{{BASE}}site.config.json" as="fetch" crossorigin>
   <title>{{TITLE}}</title>
   <script type="module" src="{{BASE}}app.mjs"></script>
 </head>
 <body data-product="{{PRODUCT}}" data-base="{{BASE}}">
   <a class="skip-link" href="#main">Đến nội dung chính</a>
   <header class="site-header container">
-    <a class="brand" href="{{BASE}}index.html" aria-label="FTU Legacy K63, trang chủ"><span class="brand-icon">63</span><span>FTU LEGACY <small>K63 / NHA408E</small></span></a>
+    <a class="brand" href="{{BASE}}index.html"><span class="brand-icon">63</span><span>FTU LEGACY <small>K63 / NHA408E</small></span></a>
     <nav aria-label="Điều hướng chính">
       <a href="{{BASE}}index.html#du-an">Dự án</a>
       <a href="{{BASE}}index.html#san-pham">Sản phẩm</a>

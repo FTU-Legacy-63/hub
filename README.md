@@ -43,6 +43,8 @@ GitHub Pages dùng GitHub Actions, không dùng nhánh `gh-pages`. Workflow `.gi
 
 Các URL `/san-pham/g01/` đến `/san-pham/g10/` có HTML riêng để mở trực tiếp, refresh và chia sẻ. Nội dung chi tiết được nạp từ JSON chung, cần JavaScript. Thư mục `research`, `setup`, source và dependency không nằm trong artifact website.
 
+Sau khi workflow deploy thành công, chạy `npm run verify-live` để kiểm tra HTTP và SHA-256 của toàn bộ file công khai so với bản build local. Lệnh chỉ đọc, không tạo tài nguyên hoặc gửi góp ý; kiểm tra này không thay thế việc thử giao diện trong trình duyệt.
+
 ## Nguồn và giới hạn
 
 - Thiết kế dựa trên handoff `TrangChu.dc.html`, `ChiTietSanPham.dc.html` và hướng dẫn art director của K63; tham khảo cấu trúc showcase [K62](https://ftu-legacy-62.github.io/hub/).

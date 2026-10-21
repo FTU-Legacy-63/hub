@@ -9,7 +9,7 @@ Kiểm tra ngày 21/10/2026. Không dùng giao diện mô phỏng do AI tạo l�
 | Nhóm | Cover | Hai ảnh bổ sung |
 | --- | --- | --- |
 | G01 | GAME RULEBOOK.md trong repo | Các đoạn tiếp theo của rulebook |
-| G02 | Demo MEDIFIN công khai | README: How MEDIFIN Works |
+| G02 | Demo MEDIFIN công khai | README: current MVP và case flow; phần tiếp theo của How MEDIFIN Works |
 | G03 | Demo Who Runs The World công khai | README: tính năng chính |
 | G04 | Week5/feature-scope.md | Các đoạn scope tiếp theo, gồm nội dung chưa triển khai |
 | G05 | Demo ARBIVERSE công khai | README: tính năng chính |
