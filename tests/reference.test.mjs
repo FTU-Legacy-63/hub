@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import {parseHTML} from 'linkedom';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const html=path=>parseHTML(read(path)).document;
@@ -9,6 +10,8 @@ const catalog=JSON.parse(read('products.json'));
 test('Attempt-2 supplied HTML, tokens and all decoration/icon files retain their exact source bytes',()=>{
  const manifest=JSON.parse(read('docs/ATTEMPT_2_SOURCE.json'));
  assert.equal(manifest.files.length,30);
+ // Case-insensitive macOS ignore rules once hid the lowercase icons folder.
+ execFileSync('git',['ls-files','--error-unmatch',...manifest.files.map(item=>item.local)],{cwd:new URL('../',import.meta.url),stdio:'pipe'});
  for(const item of manifest.files){const hash=createHash('sha256').update(readFileSync(new URL('../'+item.local,import.meta.url))).digest('hex');assert.equal(hash,item.sha256,item.local);}
 });
 test('Home preserves exact hero, panel, heading, section and decorative-image style values',()=>{

@@ -6,3 +6,6 @@ output/
 .env*
 .DS_Store
 Icon*
+!assets/icons/
+assets/icons/*
+!assets/icons/*.svg
