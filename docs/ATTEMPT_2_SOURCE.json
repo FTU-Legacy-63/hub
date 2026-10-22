@@ -1,0 +1,155 @@
+{
+  "archive": "ftu-legacy-k63-web1.zip",
+  "files": [
+    {
+      "source": "index.html",
+      "local": "src/templates/home.html",
+      "sha256": "bb40c0b83d45b31d83b52fe174f64653a0ec86e12c5a5d6ecb517f436af37e7a"
+    },
+    {
+      "source": "product.html",
+      "local": "src/templates/product.html",
+      "sha256": "d50129746102d6ba2ee55e53b2179e9b2cb385ca7cb7bbe23f3b5e02dad29c03"
+    },
+    {
+      "source": "tokens.css",
+      "local": "src/tokens.css",
+      "sha256": "9826d45ea4dd5ab396114b50fc5ecbb4ae55a0493965d3f7de4d828b0d77049f"
+    },
+    {
+      "source": "assets/globe-lite-tilt-right.svg",
+      "local": "assets/globe-lite-tilt-right.svg",
+      "sha256": "240e2d5102c700c3d77a5594bf1e269de2f619212f1fcb380640cb65a1efabc5"
+    },
+    {
+      "source": "assets/globe-lite.svg",
+      "local": "assets/globe-lite.svg",
+      "sha256": "51657f5c25c7bb77f994491ff1d81060c227c5461d74308a8787716ff43012d0"
+    },
+    {
+      "source": "assets/globe.svg",
+      "local": "assets/globe.svg",
+      "sha256": "e29d07eabadfb72ed93baec278768c459b5c64955998589322a6cd0a8044e9c4"
+    },
+    {
+      "source": "assets/icons/arrow-right.svg",
+      "local": "assets/icons/arrow-right.svg",
+      "sha256": "ec3054e772614af3b5c97e09924101fd1ef6769e56abc21eb4b7fcfc36df17cc"
+    },
+    {
+      "source": "assets/icons/cat-dau-tu.svg",
+      "local": "assets/icons/cat-dau-tu.svg",
+      "sha256": "a73116fee6d9039496a5c7a943f1f09cd1cbc65119a383222d549d5c3cc393f7"
+    },
+    {
+      "source": "assets/icons/cat-doanh-nghiep-sme.svg",
+      "local": "assets/icons/cat-doanh-nghiep-sme.svg",
+      "sha256": "be9b20dfc3ad6828bab8021dc41e2017afa740f490fa7bf57729f1df8b430029"
+    },
+    {
+      "source": "assets/icons/cat-game-mo-phong.svg",
+      "local": "assets/icons/cat-game-mo-phong.svg",
+      "sha256": "95559be51369eac0f7448829315e01baffc1c468df8ef972951db4b8ea8db15c"
+    },
+    {
+      "source": "assets/icons/cat-giao-duc.svg",
+      "local": "assets/icons/cat-giao-duc.svg",
+      "sha256": "20fb7b7d6234f4d5425297ff2eca685520ea3a85abd413cc603b0ca4e700eafa"
+    },
+    {
+      "source": "assets/icons/cat-huong-nghiep.svg",
+      "local": "assets/icons/cat-huong-nghiep.svg",
+      "sha256": "404546287b605c76fdfff9efd581c91950a9c1afc1e1b1e9973642501e76aeac"
+    },
+    {
+      "source": "assets/icons/cat-phan-tich.svg",
+      "local": "assets/icons/cat-phan-tich.svg",
+      "sha256": "161752aa750a9abb777161c1e882d89a465f1d770b56021122b72934e205f1b6"
+    },
+    {
+      "source": "assets/icons/check.svg",
+      "local": "assets/icons/check.svg",
+      "sha256": "f68a68a18a432af592f3192130875d9de04967e1e246875cf901ab76421aa7c2"
+    },
+    {
+      "source": "assets/icons/chevron-down.svg",
+      "local": "assets/icons/chevron-down.svg",
+      "sha256": "0423a37ba6ab897829514ffb0fc8b4a722aafc3810c3ce36e7b3d04a6e4b1470"
+    },
+    {
+      "source": "assets/icons/chevron-left.svg",
+      "local": "assets/icons/chevron-left.svg",
+      "sha256": "67e759ea59a5e65570be689df5b7825dbea4f399db96461a476b82c39a2a50e4"
+    },
+    {
+      "source": "assets/icons/chevron-right.svg",
+      "local": "assets/icons/chevron-right.svg",
+      "sha256": "92a58c6817baaf7c6563e4b6c55fe0cc33165b5eede99bb1600a0e20cad9497b"
+    },
+    {
+      "source": "assets/icons/clock.svg",
+      "local": "assets/icons/clock.svg",
+      "sha256": "6075f89f9a5fff706256177aa46a5b7eeb4f6cfd147b2b11000cc0be4eba82fd"
+    },
+    {
+      "source": "assets/icons/git-branch.svg",
+      "local": "assets/icons/git-branch.svg",
+      "sha256": "20709d9b3d0aa61ddba00e5cbec8bdf93367d9e283c2d79a322763da07ed2e94"
+    },
+    {
+      "source": "assets/icons/mail.svg",
+      "local": "assets/icons/mail.svg",
+      "sha256": "e5eeb20eca5ebab66eb58fa889214992eb22c16c7ebaf24a2c13445eca286d7a"
+    },
+    {
+      "source": "assets/icons/play.svg",
+      "local": "assets/icons/play.svg",
+      "sha256": "422b975b5fce1ca351c62215566d0767631452b3677da0214e718a0f2898f073"
+    },
+    {
+      "source": "assets/icons/search.svg",
+      "local": "assets/icons/search.svg",
+      "sha256": "28dcdac3cefbeb9cbbf5f84fd42c31beb468e5563c94cc906f6fcca29731a39b"
+    },
+    {
+      "source": "assets/icons/star-filled.svg",
+      "local": "assets/icons/star-filled.svg",
+      "sha256": "621a9b2226beda6d606f2c3892eef4a8688568dc7f585c1945c1ead18647a403"
+    },
+    {
+      "source": "assets/icons/star-outline.svg",
+      "local": "assets/icons/star-outline.svg",
+      "sha256": "2c7955a94b38179aaa9d995e0400ae2b2d5decb7765e77a23804241c84710948"
+    },
+    {
+      "source": "assets/icons/user.svg",
+      "local": "assets/icons/user.svg",
+      "sha256": "04c6f1ac986074d5389a7f674d9aec58f9add6d6e6fb20065de3e28c9f3a21db"
+    },
+    {
+      "source": "assets/icons/users.svg",
+      "local": "assets/icons/users.svg",
+      "sha256": "b634b65908d7e7ad7895af7afc2fe105d26f7c2c8aceda9413a644787fcc073a"
+    },
+    {
+      "source": "assets/ring-chrome-double.svg",
+      "local": "assets/ring-chrome-double.svg",
+      "sha256": "20adf5221ee74c40971039b1a8b387827b47e316a779e58d78b33576a91bcfae"
+    },
+    {
+      "source": "assets/ring-glass-side.svg",
+      "local": "assets/ring-glass-side.svg",
+      "sha256": "4124b4cf37ed0929572556d229b963ab47cc5fa2be109cb0b6302c65fb320baa"
+    },
+    {
+      "source": "assets/ring-glass-top.svg",
+      "local": "assets/ring-glass-top.svg",
+      "sha256": "7bb61e4b222dd03c88f0c374a31b272b5f93c97f57d7b0c19d3796046972e374"
+    },
+    {
+      "source": "assets/star.svg",
+      "local": "assets/star.svg",
+      "sha256": "ae85216b477972d022ce0af5e5201c977af1f4a377e6f40faa0f3dd24c415aea"
+    }
+  ]
+}

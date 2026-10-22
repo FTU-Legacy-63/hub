@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.2">
+<g transform="rotate(-18 500 500)">
+<circle cx="500" cy="500" r="480"></circle>
+<ellipse cx="500" cy="500" rx="416" ry="480"></ellipse>
+<ellipse cx="500" cy="500" rx="339" ry="480"></ellipse>
+<ellipse cx="500" cy="500" rx="240" ry="480"></ellipse>
+<ellipse cx="500" cy="500" rx="124" ry="480"></ellipse>
+<line x1="500" y1="20" x2="500" y2="980"></line>
+<ellipse cx="500" cy="500" rx="480" ry="62"></ellipse>
+<ellipse cx="500" cy="376" rx="464" ry="58"></ellipse>
+<ellipse cx="500" cy="260" rx="416" ry="52"></ellipse>
+<ellipse cx="500" cy="161" rx="339" ry="42"></ellipse>
+<ellipse cx="500" cy="84" rx="240" ry="30"></ellipse>
+<ellipse cx="500" cy="624" rx="464" ry="58"></ellipse>
+<ellipse cx="500" cy="740" rx="416" ry="52"></ellipse>
+<ellipse cx="500" cy="839" rx="339" ry="42"></ellipse>
+<ellipse cx="500" cy="916" rx="240" ry="30"></ellipse>
+</g>
+</svg>

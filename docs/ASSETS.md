@@ -4,7 +4,7 @@ Kiểm tra ngày 21/10/2026. Không dùng giao diện mô phỏng do AI tạo l�
 
 ## Ảnh sản phẩm
 
-`assets/products/g01.webp` đến `g10.webp` là cover 960×600. Mỗi nhóm có thêm `gXX-f2.webp` và `gXX-f3.webp` cho hai trạng thái tính năng. `products.json` giữ caption và nguồn tài liệu chi tiết.
+`assets/products/g01.webp` đến `g10.webp` là cover 960×600. Mỗi nhóm có thêm `gXX-f2.webp` và `gXX-f3.webp` làm ảnh minh họa bổ sung. `products.json` giữ caption và nguồn tài liệu chi tiết. Trong attempt 2, chọn card tính năng để xem ảnh trong modal.
 
 | Nhóm | Cover | Hai ảnh bổ sung |
 | --- | --- | --- |
@@ -21,9 +21,13 @@ Kiểm tra ngày 21/10/2026. Không dùng giao diện mô phỏng do AI tạo l�
 
 Ảnh chụp bằng trình duyệt không đăng nhập, không nhập thông tin cá nhân. G09 chỉ chạy phân tích thị trường đọc dữ liệu, không lưu quyết định. Ảnh gốc 1280×800 được nén cơ học bằng cwebp thành WebP 960×600. Không sửa con số hoặc trạng thái sản phẩm. Các ảnh tài liệu không chứng minh tính năng đã chạy; caption giao diện nêu rõ giới hạn này.
 
-## Chrome trang trí
+## Trang trí theo attempt 2 (22/10/2026)
 
-`assets/chrome.webp`: hình starburst chrome và torus trong suốt được tạo bằng công cụ sinh ảnh, theo yêu cầu asset chrome của art director. Chỉ trang trí hero, không phải logo hay bằng chứng sản phẩm. Prompt mô tả kim loại bạc phản chiếu cobalt/navy/sky, bố cục thiên phải, không chữ, không watermark. Nén WebP rộng 1200px, 139.792 byte, dưới giới hạn 300KB.
+Dùng nguyên 7 SVG và 20 icon SVG được cung cấp trong `ftu-legacy-k63-web1.zip`: `globe.svg`, `globe-lite.svg`, `globe-lite-tilt-right.svg`, `star.svg`, `ring-glass-top.svg`, `ring-glass-side.svg`, `ring-chrome-double.svg` và `assets/icons/`. Vị trí, kích thước, opacity và lớp hiển thị giữ theo HTML gốc. SHA-256 từng file nằm trong `ATTEMPT_2_SOURCE.json`. Không vẽ lại hoặc thay bằng concept sinh ảnh khác.
+
+### Asset bản đầu được giữ làm lịch sử
+
+`assets/chrome.webp`: asset sinh ảnh của bản đầu, 139.792 byte, **không được dùng trong giao diện attempt 2**. Giữ lại để đối chiếu lịch sử, không phải logo hay bằng chứng sản phẩm.
 
 `assets/og.webp`: ảnh chia sẻ chụp từ trang chủ showcase, không chứa dữ liệu cá nhân.
 
@@ -31,4 +35,4 @@ Kiểm tra ngày 21/10/2026. Không dùng giao diện mô phỏng do AI tạo l�
 
 ## Typography
 
-IBM Plex Mono, gói `@fontsource/ibm-plex-mono` 5.3.0. Build chỉ copy WOFF2 Latin, Latin Extended và Vietnamese ở weight 300/400/500/600 cùng LICENSE. Không tải font từ Google Fonts ở runtime.
+IBM Plex Mono, gói `@fontsource/ibm-plex-mono` 5.3.0. Build copy WOFF2 Latin, Latin Extended và Vietnamese ở weight 300/400/500/600 normal cùng 400 italic cho phần rationale, tổng 15 font-face và LICENSE. Không tải font từ Google Fonts ở runtime.

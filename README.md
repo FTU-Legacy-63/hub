@@ -12,6 +12,18 @@ Trang giới thiệu 10 dự án G01–G10 của học phần NHA408E, Chương 
 - Font IBM Plex Mono tự lưu trữ, có bộ ký tự tiếng Việt. Hỗ trợ màn hình nhỏ, bàn phím và giảm chuyển động.
 - Góp ý hiện là **placeholder theo quyết định của ban điều phối**. Không có chức năng gửi hoặc lưu phản hồi cho đến khi kết nối Google Form thật.
 
+## Giao diện attempt 2
+
+Bản ngày 22/10/2026 dùng `ftu-legacy-k63-web1.zip` và ảnh output người dùng cung cấp làm chuẩn, thay cho cách diễn giải giao diện ở bản đầu.
+
+- `src/templates/home.html` và `src/templates/product.html`: giữ nguyên HTML mẫu.
+- `src/tokens.css` và các SVG trong `assets/`: giữ nguyên file thiết kế, không sinh lại hình trang trí.
+- `scripts/render-reference.mjs`: điền dữ liệu thật, chỉnh link và xử lý các ngoại lệ quyền riêng tư khi build; không thay giá trị style của bố cục mẫu.
+- `src/cards.mjs`: giữ markup/style card và chip của mẫu; thay nội dung minh họa bằng dữ liệu nhóm.
+- `src/styles.css`: chỉ chứa các bổ sung cho thao tác, accessibility, preview góp ý và modal ảnh, không dựng một hệ bố cục khác đè lên mẫu.
+
+Manifest [ATTEMPT_2_SOURCE.json](docs/ATTEMPT_2_SOURCE.json) ghi SHA-256 của 30 file HTML/token/SVG gốc để kiểm tra độ nguyên vẹn. [Các khác biệt có chủ đích](docs/ATTEMPT_2_DEVIATIONS.md) phân biệt rõ phần dữ liệu/quyền riêng tư với phần thiết kế. Báo cáo [audit attempt 2](docs/ATTEMPT_2_AUDIT.md) là báo cáo cho giao diện mới; `docs/AUDIT.md` lưu lịch sử bản đầu.
+
 ## Chạy local
 
 Yêu cầu Node.js 22+ và Python 3.
@@ -41,13 +53,13 @@ Mở http://127.0.0.1:8180/. Sau mỗi lần sửa source hoặc JSON, chạy l�
 
 GitHub Pages dùng GitHub Actions, không dùng nhánh `gh-pages`. Workflow `.github/workflows/pages.yml` build, test và chỉ xuất bản thư mục `dist` khi có push vào `main`. Trong Settings → Pages, chọn source **GitHub Actions**.
 
-Các URL `/san-pham/g01/` đến `/san-pham/g10/` có HTML riêng để mở trực tiếp, refresh và chia sẻ. Nội dung chi tiết được nạp từ JSON chung, cần JavaScript. Thư mục `research`, `setup`, source và dependency không nằm trong artifact website.
+Các URL `/san-pham/g01/` đến `/san-pham/g10/` có HTML riêng để mở trực tiếp, refresh và chia sẻ. Nội dung được dựng sẵn từ JSON chung khi build, có thể đọc và mở liên kết khi chưa chạy JavaScript. JavaScript bổ sung tìm kiếm, lọc, carousel và xem ảnh minh họa. Thư mục `research`, `setup`, source và dependency không nằm trong artifact website.
 
 Sau khi workflow deploy thành công, chạy `npm run verify-live` để kiểm tra HTTP và SHA-256 của toàn bộ file công khai so với bản build local. Lệnh chỉ đọc, không tạo tài nguyên hoặc gửi góp ý; kiểm tra này không thay thế việc thử giao diện trong trình duyệt.
 
 ## Nguồn và giới hạn
 
-- Thiết kế dựa trên handoff `TrangChu.dc.html`, `ChiTietSanPham.dc.html` và hướng dẫn art director của K63; tham khảo cấu trúc showcase [K62](https://ftu-legacy-62.github.io/hub/).
+- Thiết kế hiện tại theo bản HTML/CSS/JS attempt 2 đã được người dùng xác nhận và ảnh output đi kèm. Handoff `.dc.html` ban đầu và showcase [K62](https://ftu-legacy-62.github.io/hub/) chỉ là nguồn lịch sử/tham khảo, không thay thế mẫu mới.
 - Dữ liệu sản phẩm lấy từ repository chính thức [FTU-Legacy-63](https://github.com/FTU-Legacy-63). Mỗi trang ghi rõ đường dẫn nguồn và SHA snapshot; thông tin không tự cập nhật theo repo nhóm.
 - Mô tả lợi ích là mục tiêu sử dụng của sản phẩm, không phải kết luận về hiệu quả trên người dùng thật.
 - Ảnh giao diện chụp ở thời điểm kiểm tra có thể khác bản mới nhất. Link demo bên ngoài do từng nhóm vận hành.

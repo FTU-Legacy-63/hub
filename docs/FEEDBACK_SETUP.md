@@ -1,5 +1,23 @@
 # Bật nhận góp ý không yêu cầu tài khoản
 
+## Thao tác để kích hoạt ngay
+
+1. Mở https://script.google.com/home/start và chọn **New project / Dự án mới** bằng tài khoản quản lý lớp.
+2. Mở file Code.gs mặc định, thay nội dung bằng toàn bộ file setup/create-feedback-form.gs đính kèm trong chat, rồi bấm **Save**.
+3. Ở thanh trên, chọn hàm **createK63FeedbackForm** rồi bấm **Run / Chạy**. Xem mã và cấp quyền tạo Google Forms/Google Sheets cho chính script này. Không gửi mật khẩu cho người triển khai.
+4. Mở **Execution log / Nhật ký thực thi** và gửi lại đoạn JSON có ba trường **formUrl**, **embedUrl**, **productEntry**. Không gửi link chỉnh sửa form hoặc link Sheet phản hồi.
+5. Trong Forms, kiểm tra Publish/Manage cho phép **Anyone with the link** và thử cửa sổ ẩn danh. Chính sách tài khoản trường có thể chặn người ngoài dù script đã tắt thu email.
+
+Script tạo một form và một Google Sheet riêng tư. Chạy lại sẽ dùng lại các file đã tạo, không xóa dữ liệu. Script không gửi email, không gọi dịch vụ ngoài và không tự chia quyền xem bảng phản hồi. Chưa chạy script thì website chưa có nơi nhận góp ý thật.
+
+## Tự điền sản phẩm theo trang
+
+- Trang chủ: chưa chọn sản phẩm.
+- Trang chi tiết G01–G10: iframe và link mở tab mới đều điền sẵn đúng giá trị **Gxx - Tên sản phẩm**.
+- Mã entry được lấy từ đường dẫn điền sẵn thật của Google, không đoán theo ID câu hỏi.
+- Google Forms cho phép đổi lựa chọn điền sẵn. Tự điền không phải khóa cứng hay chống giả mạo.
+- Unit test kiểm tra URL của đủ 10 sản phẩm và mã tạo form bằng mô phỏng. Cần gửi thử và kiểm tra phản hồi thật trên Google sau khi chủ tài khoản chạy script; không được coi iframe tải xong là gửi thành công.
+
 Website chỉ nhận góp ý thật khi có Google Form đã xuất bản. Không dùng GitHub Issues cho người xem phổ thông. Không ghi API key, token hoặc link bảng phản hồi vào repo.
 
 ## Cách ngắn nhất cho người quản lý lớp

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs><linearGradient id="ringA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAF2FF"></stop><stop offset="0.45" stop-color="#4C7BEA"></stop><stop offset="1" stop-color="#162B73"></stop></linearGradient></defs>
+<ellipse cx="200" cy="200" rx="150" ry="66" transform="rotate(-32 200 200)" fill="none" stroke="url(#ringA)" stroke-width="34"></ellipse>
+<ellipse cx="196" cy="192" rx="150" ry="66" transform="rotate(-32 200 200)" fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3"></ellipse>
+</svg>

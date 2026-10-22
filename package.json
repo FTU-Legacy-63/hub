@@ -10,5 +10,10 @@
     "research": "node scripts/collect-repos.mjs",
     "verify-live": "node scripts/verify-live.mjs"
   },
-  "dependencies": {"@fontsource/ibm-plex-mono": "5.3.0"}
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.12"
+  }
 }

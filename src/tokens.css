@@ -1,0 +1,57 @@
+/* FTU Legacy K63 — design tokens.
+   Mọi màu / font / khoảng cách trong index.html và product.html đều trỏ về đây.
+   Đổi giá trị ở đây, không tự thêm màu mới trong component. */
+:root {
+  /* Nền tối */
+  --c-black: #02040A;
+  --c-black-2: #03060F;
+  --c-black-3: #030A1E;
+
+  /* Navy (chữ trên nền sáng, nền tối) */
+  --c-navy: #061235;
+  --c-navy-2: #071649;
+  --c-navy-3: #0A1F66;
+
+  /* Xanh chính */
+  --c-blue-900: #0B2C8F;
+  --c-blue-700: #1546C4;
+  --c-blue-600: #1A4FD0;
+  --c-blue-500: #1F5FE0;
+  --c-blue-450: #2A66E2;
+  --c-blue-400: #3A78E6;
+
+  /* Xanh trời (dải chuyển, section Góp ý) */
+  --c-sky-300: #8EC2F0;
+  --c-sky-200: #A9D2F5;
+  --c-sky-100: #CFE6F8;
+  --c-sky-75: #DCEEFB;
+  --c-sky-60: #E2F0FC;
+  --c-sky-55: #E8F3FD;
+  --c-sky-50: #F4F9FE;
+
+  /* Chữ phụ trên nền sáng */
+  --c-ink-muted: #2B3758;
+  --c-ink-placeholder: #55617D;
+  --c-white: #FFFFFF;
+
+  /* Kính mờ (glassmorphism) — dùng cho card / panel trên nền xanh */
+  --glass-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
+  --glass-border: 1px solid rgba(255, 255, 255, 0.4);
+  --glass-blur: blur(16px);
+
+  /* Chữ */
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  /* Cỡ chữ chính trong thiết kế:
+     h1 hero clamp(38px, 5.4vw, 74px) · h2 section clamp(34px, 4.4vw, 60px)
+     eyebrow 13px letter-spacing .14em · nhãn thẻ 12px HOA .14em
+     giá trị nổi bật trong thẻ 40px/500 · body 16–17px line-height 1.7 */
+
+  /* Bố cục */
+  --container: 1280px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --radius-pill: 999px;
+  --radius-card: 28px;
+  --radius-card-accent: 28px 72px 28px 28px; /* thẻ nổi bật: góc trên phải bo lớn */
+  --radius-panel: 40px;
+  --tap-min: 44px;
+}
