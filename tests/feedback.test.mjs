@@ -41,7 +41,7 @@ test('Apps Script creates private storage once, resumes safely and derives Googl
   asListItem(){return this;}asScaleItem(){return this;}asParagraphTextItem(){return this;}
   createResponse(value){return {value};}
  }
- const form={getId:()=> 'form-id',getItems:()=>items,getDestinationId:()=>form.destination,
+ const form={getId:()=> 'form-id',getItems:()=>items,getDestinationId:()=>{if(!form.destination)throw new Error('No destination');return form.destination;},
   getPublishedUrl:()=> 'https://docs.google.com/forms/d/e/REAL_GENERATED/viewform',
   supportsAdvancedResponderPermissions:()=>true,
   setDestination(type,id){form.destination=id;return form;},

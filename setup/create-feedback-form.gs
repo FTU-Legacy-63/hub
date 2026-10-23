@@ -35,8 +35,12 @@ function createK63FeedbackForm() {
     var comment = findItem(commentTitle);
     comment = comment ? comment.asParagraphTextItem() : form.addParagraphTextItem().setTitle(commentTitle);
     comment.setRequired(true).setHelpText('Không ghi mật khẩu, số điện thoại, email hoặc thông tin cá nhân.');
+    // getDestinationId() throws (rather than returning null) before a form is
+    // linked to a response sheet. Treat that documented state as "no sheet".
+    var destinationId = null;
+    try { destinationId = form.getDestinationId(); } catch (error) {}
     // No sharing calls: the linked response spreadsheet is private by default.
-    if (!form.getDestinationId()) {
+    if (!destinationId) {
       var sheetId = properties.getProperty('K63_FEEDBACK_SHEET_ID');
       if (!sheetId) {
         sheetId = SpreadsheetApp.create('FTU Legacy K63 - Phản hồi (riêng tư)').getId();
