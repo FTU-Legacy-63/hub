@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FTU Legacy K63 — Triển lãm sản phẩm</title>
+<meta name="description" content="Khám phá các sản phẩm tài chính của sinh viên K63 CTTT Tài chính – Ngân hàng, Trường Đại học Ngoại thương, trong một triển lãm 3D tương tác.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/ftu-logo.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/world.css">
+</head>
+<body>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<!-- nhãn nổi trên từng sản phẩm (HTML để chữ luôn sắc) -->
+<div class="labels" id="labels" aria-hidden="true"></div>
+
+<!-- con trỏ tùy biến -->
+<div class="cursor" id="cursor" aria-hidden="true"><i></i><span id="cursor-t">Nhấp đúp</span></div>
+
+<!-- thanh trên -->
+<header class="top">
+  <a class="brand" href="#/" data-home><img src="assets/ftu-logo.png" alt=""><b>FTU Legacy</b><em>K63</em></a>
+  <nav class="top__nav">
+    <a href="#/du-an">Thông tin dự án</a>
+    <a href="https://github.com/" data-cfg-href="githubUrl" target="_blank" rel="noopener">GitHub ↗</a>
+    <span class="mono top__clock">Hà Nội <b id="clock">--:--</b></span>
+  </nav>
+</header>
+
+<!-- màn mở đầu: tiêu đề "FTU Legacy K63" dựng bằng hạt trong canvas; phần chữ HTML xếp quanh tiêu đề -->
+<section class="intro" id="intro" aria-labelledby="intro-title">
+  <h1 id="intro-title" class="sr-only">FTU Legacy K63</h1>
+  <p class="intro__eyebrow mono">Trường Đại học Ngoại thương · CTTT Tài chính – Ngân hàng · NHA408E</p>
+  <div class="intro__center">
+    <p class="intro__sub">Triển lãm tương tác <span data-count>10</span> sản phẩm tài chính<br>do sinh viên Khóa 63 thiết kế và xây dựng.</p>
+    <button type="button" class="intro__go" id="enter">Vào triển lãm <span aria-hidden="true">→</span></button>
+  </div>
+  <p class="intro__hint mono"><span><i>Di chuột</i> chạm vào các hạt</span><span><i>Giữ chuột</i> hút chúng lại</span><span><i>Nhấp đúp</i> vào triển lãm</span></p>
+</section>
+
+<!-- gợi ý thao tác -->
+<p class="hint mono" id="hint">
+  <span><i class="k">Di chuột</i> nhìn quanh</span>
+  <span><i class="k">Kéo</i> xoay toàn cảnh</span>
+  <span><i class="k">Nhấp đúp</i> đi vào sản phẩm</span>
+</p>
+
+<!-- danh mục nhanh 01–10 -->
+<nav class="index" id="index" aria-label="Các sản phẩm"></nav>
+
+<!-- thông tin chi tiết: nhiều ô quanh sản phẩm -->
+<section class="detail" id="detail" aria-live="polite" hidden>
+  <button type="button" class="d-back" id="back"><span aria-hidden="true">←</span> Về toàn cảnh <kbd>Esc</kbd></button>
+  <div class="d-col d-col--l" id="d-left"></div>
+  <div class="d-col d-col--r" id="d-right"></div>
+  <nav class="d-nav" id="d-nav" aria-label="Chuyển sản phẩm">
+    <button type="button" id="prev"><span aria-hidden="true">←</span> <span id="prev-t">Nhóm 10</span></button>
+    <span class="mono" id="pos">01 / 10</span>
+    <button type="button" class="d-more" id="more">Xem chi tiết</button>
+    <button type="button" id="next"><span id="next-t">Nhóm 02</span> <span aria-hidden="true">→</span></button>
+  </nav>
+</section>
+
+<!-- hồ sơ chi tiết sản phẩm: 6 thẻ, mỗi thẻ vừa một màn hình -->
+<section class="dossier" id="dossier" role="dialog" aria-modal="true" aria-labelledby="ds-title" hidden>
+  <div class="ds__inner">
+    <header class="ds__head">
+      <div><p class="p-eyebrow" id="ds-eyebrow"></p><h2 class="ds__title" id="ds-title"></h2></div>
+      <button type="button" class="ds__close" id="ds-close">Đóng <kbd>Esc</kbd></button>
+    </header>
+    <div class="ds__body">
+      <nav class="ds__tabs" id="ds-tabs" role="tablist" aria-label="Các phần của hồ sơ"></nav>
+      <div class="ds__panel" id="ds-panel" role="tabpanel" tabindex="0"></div>
+    </div>
+    <footer class="ds__foot">
+      <button type="button" id="ds-prev"><span aria-hidden="true">←</span> <span id="ds-prev-t"></span></button>
+      <span class="mono" id="ds-pos"></span>
+      <button type="button" id="ds-next"><span id="ds-next-t"></span> <span aria-hidden="true">→</span></button>
+    </footer>
+  </div>
+</section>
+
+<!-- ô phóng to: ảnh nhóm / đội ngũ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem chi tiết" hidden><div class="lb__card" id="lb-card"></div></div>
+
+<!-- màn chuyển cảnh khi bay -->
+<div class="veil" id="veil" aria-hidden="true"></div>
+
+<!-- khi máy không hỗ trợ WebGL -->
+<section class="nogl" id="nogl" hidden>
+  <h1>Thiết bị này chưa hỗ trợ đồ họa 3D.</h1>
+  <p>Bạn vẫn có thể xem và dùng thử các sản phẩm qua danh sách dưới đây.</p>
+  <ol class="nogl__list" id="nogl-list"></ol>
+</section>
+
+<script src="js/three.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/world.js"></script>
+</body>
+</html>

@@ -2,9 +2,17 @@
 
 Trang giới thiệu 10 dự án G01–G10 của học phần NHA408E, Chương trình Tiên tiến Tài chính - Ngân hàng, Trường Đại học Ngoại thương. Giảng viên hướng dẫn: Phan Trần Trung Dũng.
 
+## Giao diện triển lãm 3D
+
+Trang chủ dùng giao diện 3D được cung cấp ngày 30/10/2026. Bản thiết kế nằm trong `src/world/`; dữ liệu sản phẩm và thành viên được lấy từ `products.json` khi build, còn ảnh do các nhóm cung cấp nằm trong `assets/world-groups/`. Mở một nhóm trong triển lãm để xem ảnh, đội ngũ, mô tả, liên kết sản phẩm và hồ sơ chi tiết. Các đường dẫn `/san-pham/g01/` đến `/san-pham/g10/` và trang trước tại `/legacy.html` vẫn được build.
+
+Chạy `npm run build` rồi `npm run dev` để xem. Ảnh sản phẩm trong cảnh 3D cần mở qua web server, không mở trực tiếp file HTML. Một số nhóm chưa công bố demo và bộ ảnh chưa có ảnh chân dung riêng của thành viên; những mục đó không được tự tạo.
+
 **Website:** https://ftu-legacy-63.github.io/hub/
 
-## Nội dung
+## Nội dung giao diện trước
+
+Các tính năng bên dưới thuộc bản trước tại `legacy.html` và các trang `/san-pham/g01/`–`/san-pham/g10/`.
 
 - Trang chủ: giới thiệu lớp, tìm kiếm tiếng Việt có/không dấu, 7 bộ lọc và carousel sản phẩm.
 - 10 trang chi tiết: đối tượng, tính năng, lợi ích, hành trình, thành viên và nguồn đối chiếu.
@@ -12,7 +20,7 @@ Trang giới thiệu 10 dự án G01–G10 của học phần NHA408E, Chương 
 - Font IBM Plex Mono tự lưu trữ, có bộ ký tự tiếng Việt. Hỗ trợ màn hình nhỏ, bàn phím và giảm chuyển động.
 - Góp ý hiện là **placeholder theo quyết định của ban điều phối**. Không có chức năng gửi hoặc lưu phản hồi cho đến khi kết nối Google Form thật.
 
-## Giao diện attempt 2
+## Giao diện attempt 2 (lưu trữ)
 
 Bản ngày 22/10/2026 dùng `ftu-legacy-k63-web1.zip` và ảnh output người dùng cung cấp làm chuẩn, thay cho cách diễn giải giao diện ở bản đầu.
 
