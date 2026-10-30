@@ -556,10 +556,10 @@
           <article class="ds-card ds-persona">
             <div class="ds-persona__h"><span class="ds-persona__ic">${ICO_USER}</span><b>${esc(u.name)}</b></div>
             <p>${esc(u.desc || '')}</p>
-            <div class="ds-lists">
-              <div><p class="p-label">Nhu cầu</p><ul>${(u.needs || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
-              <div class="pains"><p class="p-label">Khó khăn</p><ul>${(u.pains || []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
-            </div>
+            ${(u.needs || []).length || (u.pains || []).length ? `<div class="ds-lists">
+              ${(u.needs || []).length ? `<div><ul>${u.needs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+              ${(u.pains || []).length ? `<div class="pains"><ul>${u.pains.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+            </div>` : ''}
           </article>`).join('')}</div>`;
       case 'tinh-nang': {
         const f = d.features && d.features.length ? d.features : g.highlights || [];
